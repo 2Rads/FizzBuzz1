@@ -5,6 +5,11 @@ describe  'fizzbuzz' do
   end
 
   it 'returns "buzz" for the number 5' do
-    expect(fizzbuzz(5))).to eq 'buzz'
+    expect(fizzbuzz(5)).to eq 'buzz'
   end
+
+  it 'returns "number" for the number  if not divisble by 5 or 3' do
+    expect(fizzbuzz(4)).to eq '4'
+  end
+
 end
